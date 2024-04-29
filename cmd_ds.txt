@@ -1,0 +1,69 @@
+Assignment no 1
+
+1st terminal
+
+step 1 : javac *.java
+step 2 : rmiregistry
+
+2nd terminal
+
+step 1 : java Server
+
+3rd terminal
+
+step 1 : java Client
+
+
+
+Assignment 2 corba
+
+1st terminal
+
+step1 : idlj -fall Calc.idl
+
+2nd terminal
+step2 : go inside calcapp folder which is automatically created open terminal2 from that location.
+        javac *.java CalcPackage/*.java
+step2 : orbd -ORBInitialPort 1050&
+
+again on 1st terminal
+
+step1: javac CalcServer.java
+step2: java CalcServer -ORBInitialPort 1050 -ORBInitialHost localhost &
+
+3rd terminal: run client side code
+
+step1: javac CalcClient.java
+step2: java CalcClient  -ORBInitialPort 1050 -ORBInitialHost localhost
+
+
+
+Assignment 3
+
+step1: export MPJ_HOME=paste path here/mpj-v0_44
+step2: export PATH=$MPJ_HOME/bin:$PATH
+step3: javac -cp $MPJ_HOME/lib/mpj.jar ArrSum.java
+step4: $MPJ_HOME/bin/mpjrun.sh -np 4 ArrSum
+
+
+
+Assignment 4
+
+step1: python3 Server.py
+Step2: python3 Client.py
+
+Assignment 5
+
+step1: javac tokenring.java
+step2: java tokenring
+
+Assignment 6
+
+bully algo
+step1: javac Bully.java
+step2: java Bully
+
+Ring algo
+Step1: javac Ring.java
+Step2: java Ring
+        
